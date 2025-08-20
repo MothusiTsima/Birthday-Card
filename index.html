@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday!</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="slides">
-    <!-- Slide 1: Birthday Animation -->
-    <section class="slide" id="birthday-slide">
-      <h1 id="birthday-message">Happy Birthday Thato!</h1>
-      <!-- Animated cake image -->
-      <img src="Birthday Cake.gif" alt="Birthday Cake" class="cake" />
-      <div id="balloons"></div>
-      <div id="confetti"></div>
-    </section>
+    <div class="card-container">
+        <div class="card-front">
+            <h1 class="birthday-text">Happy 20th Birthday Thato!</h1>
+            <div class="cake-container">
+                <img src="Birthday Cake.gif" alt="Birthday Cake" class="cake-gif">
+            </div>
+            <p class="message">Click/Hover to open your card!</p>
 
-    <!-- Slide 2: Letter with photo -->
-    <section class="slide">
-      <div class="letter">
-        <p>Dear [Name],</p>
-        <p>Wishing you a day filled with love, laughter, and joy! 🎂</p>
-        <img src="photo1.jpg" alt="Memory 1" />
-      </div>
-    </section>
+            <!-- Balloons -->
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
 
-    <!-- Slide 3 -->
-    <section class="slide">
-      <div class="letter">
-        <p>You’re an amazing person, and I’m grateful for every moment we share. 💖</p>
-        <img src="photo2.jpg" alt="Memory 2" />
-      </div>
-    </section>
+            <!-- Confetti -->
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+        </div>
 
-    <!-- Slide 4 -->
-    <section class="slide">
-      <div class="letter">
-        <p>You’re an amazing person, and I’m grateful for every moment we share. 💖</p>
-        <img src="photo2.jpg" alt="Memory 3" />
-      </div>
-    </section>
+        <div class="card-back">
+            <h2 class="birthday-text birthday-text-smaller">Wishing You<br>All the Best!</h2>
+            <p class="message">May your special day be filled with laughter, joy, and happiness. Here's to another wonderful year of adventures and memories! May God Bless You!</p>
+            <button class="btn" onclick="celebrate()">Celebrate!</button>
 
-    <!-- Slide 5 -->
-    <section class="slide">
-      <div class="letter">
-        <p>You’re an amazing person, and I’m grateful for every moment we share. 💖</p>
-        <img src="photo2.jpg" alt="Memory 4" />
-      </div>
-    </section>
+            <!-- More confetti for the back -->
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+        </div>
+    </div>
 
-    <!-- Add as many slides as you want -->
-  </div>
-
-  <!-- Dots here -->
-  <div class="pagination" id="pagination"></div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
